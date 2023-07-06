@@ -1,0 +1,68 @@
+.message-container {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  flex-grow: 1;
+}
+.messages {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  flex: auto;
+}
+
+.message-options {
+  position: relative;
+}
+
+.options-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.dots {
+  font-size: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #551c1c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border-radius: 12px;
+
+}
+
+.message-options:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.dropdown-option {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background-color: #2a1c4d;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+}
+
+.dropdown-option:hover {
+  background-color: #000000;
+  border-radius: 12px;
+
+}

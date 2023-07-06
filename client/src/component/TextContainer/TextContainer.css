@@ -1,0 +1,49 @@
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #4e3434;
+  border-radius: 5px;
+  align-self: flex-start;
+  color: #ffffff;
+}
+
+.activeContainer {
+  margin-bottom: 10px;
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.activeItem img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.textContainer h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .activeItem img {
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+  }
+  
+  .textContainer h2 {
+    font-size: 16px;
+  }
+}
